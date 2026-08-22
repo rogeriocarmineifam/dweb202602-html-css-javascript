@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contato</title>
+    </head>
+    <body>
+        <h1>Contato</h1>
+            <p>Entre em contato conosco para saber mais detalhes sobre nossos cursos.</p>
+            
+            <!-- http://meuservidor.com.br/academico/processar -->
+            <form action="/processar" method="get">
+
+                <div>
+                    <label for="id-nome">Nome:</label>
+                    <input type="text" id="id-nome" name="campo-nome" placeholder="Digite o seu nome"/>
+                </div>
+                <br/>
+                <div>
+                    <label for="id-email">E-mail:</label>
+                    <input type="email" id="id-email" name="campo-email" placeholder="Digite o seu e-mail"/>
+                </div>
+                <br/>
+                <div>
+                    <label for="id-telefone">Telefone:</label>
+                    <input type="text" id="id-telefone" name="campo-telefone" placeholder="Digite o seu telefone"/>
+                </div>
+                <br/>
+                <div>
+                    <label for="id-nascimento">Nascimento:</label>
+                    <input type="date" id="id-nascimento" name="campo-nascimento" placeholder="Digite o sua data de nascimento"/>
+                </div>
+                <br/>
+                <!-- Radio button de sexo da pessoa -->
+                <div>
+                    <label for="id-curso">Curso:</label>
+                    <select id="id-curso" name="campo-curso">
+                        <option value="" disabled selected >Selecione um curso...</option>
+                        <option value="tads">Tecnologia em Análise e Desenvolvimento de Sistemas</option>
+                        <option value="tpp">Tecnologia em Produção Publicitária</option>
+                        <option value="tpa">Tecnologia em Produção de Alimentos</option>
+                    </select>
+                </div>  
+                <!-- Select de linha de pesquisa               -->
+                <br/> 
+                <div>
+                    <span id="label-turno">Turno:</span> 
+                    <input type="radio" id="id-matutino" name="campo-turno" value="matutino"/> 
+                    <label for="id-matutino">Matutino</label>
+                    <input type="radio" id="id-noturno" name="campo-turno" value="noturno"/>                   
+                    <label for="id-noturno">Noturno</label>
+                </div>                
+                <br/>   
+                <div>
+                    <span id="label-turno">Interesses:</span> 
+                    <input type="checkbox" id="id-web" name="campo-interesses" value="Desenvolvimento Web">
+                    <label for="id-web">Desenvolvimento Web</label>
+                    <input type="checkbox" id="id-ITI" name="campo-interesses" value="Infraestrutura de TI">
+                    <label for="id-ITI">Infraestrutura de TI</label>
+                </div>                
+                <br/> 
+
+                <div>
+                    <label for="id-obs">Observações:</label>
+                    <textarea id="id-obs" name="campo-obs" placeholder="Alguma observação?" rows="5"></textarea>
+                </div>
+                <br/>
+                <div>
+                    <label for="id-password">Novo Password:</label>
+                    <input type="password" id="id-password" name="campo-password" placeholder="Digite o seu novo password"/>
+                </div>
+                <br/>
+                
+                <button type="submit" name="botao-enviar" value="enviar">Enviar</button>
+                <button type="reset" name="botao-reset" value="reset">Limpar Campos</button>
+
+
+            </form>
+
+            <!-- anchor -->
+            <a href="index.html">Voltar para a página principal</a>
+        </body>
+</html>
